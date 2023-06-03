@@ -22,7 +22,7 @@ namespace WFA_Calculator
         decimal num2;
         string option;
         decimal result;
-
+        // knappen som visar 0
         private void button0_Click(object sender, EventArgs e)
         {
             textDisplay.Text = textDisplay.Text + button0.Text;
@@ -73,6 +73,8 @@ namespace WFA_Calculator
         {
             textDisplay.Text = textDisplay.Text + button9.Text;
         }
+        
+        // Gör så att att användaren kan göra decimal tal
         private void buttonComma_Click(object sender, EventArgs e)
         {
             if (textDisplay.Text.Contains(","))
@@ -119,7 +121,7 @@ namespace WFA_Calculator
         }
 
 
-
+ // Resultat knapp
         private void buttonResult_Click(object sender, EventArgs e)
         {
             num2 = decimal.Parse(textDisplay.Text);
